@@ -1,0 +1,96 @@
+.topReuse{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.mainReuse{
+    background-color: #947808;
+    width: 23%;
+    height: 85vh;
+    position: relative;
+    max-width: 500px;
+    margin: 30px 8px;
+    border: #947808 solid 2px;
+  
+}
+
+.mainReuse img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items:  last baseline;
+    background-color: #00000080;
+    color: #fff !important;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-decoration: none;
+    /* padding: 0 5px; */
+  }
+  
+  .mainReuse:hover .overlay {
+    opacity: 1;
+  }
+  .mainReuse>h4{
+    color: #fff;
+  }
+  .mainReuse>small{
+    font-size: 12px;
+    color: #fff;
+    height: fit-content;
+  }
+  .mainReuse>h4{
+    color: #ffdf5e;
+  }
+  .overlay>div{
+    display: flex;
+    justify-content: space-between;
+    background-color: #947808;
+    padding: 15px;
+    width: 80%;
+    border-radius: 0px 0px 0 12px ;
+  }
+
+  .iconre{
+    font-size: 20px;
+    color: #ffd325;
+    position: relative;
+    z-index: 9;
+  }
+  .iconre:hover{
+    background-color: #333;
+    border-radius: 200px;
+    padding: 10px;
+    z-index: 0;
+    color: #fff;
+
+  }
+  @media(max-width:900px){
+    .mainReuse{
+      flex-wrap: wrap;
+      width: 40%;
+      object-fit: scale-down;
+    }
+  }
+
+  @media(max-width:460px){
+    .mainReuse{
+      flex-wrap: wrap;
+      width: 100%;
+      object-fit: scale-down;
+    }
+  }

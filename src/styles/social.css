@@ -1,0 +1,23 @@
+.social__account--image{
+    width:2em;
+    margin:.35em 0;
+}
+
+.social__account{
+    border:1px solid #2929294e;
+    margin:1em 0 !important;
+    padding:1em;
+}
+
+.social__account button{
+    margin:1em 0;
+    padding:.5em .75em;
+    border:none;
+    background-color:transparent;
+    border:1px solid #2929294e;
+}
+
+.social__button--disconnect{
+    border:none !important;
+    background-color:#EEE !important;
+}

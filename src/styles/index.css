@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  font-size: var(--default-font);
+  /* border:1px solid #00000b; */
+}
+
+:root {
+  --primary: #eee;
+  --white: #FFF;
+  --black: #000;
+  --secondary: #222;
+  --header-font: 'Manrope', sans-serif;
+  --primary-font: 'Golos Text', sans-serif;
+  --text-font: 'Poppins', sans-serif;
+  --rounded-sm: .2rem;
+  --max-width: 50em;
+  --mid-fade: .85;
+  --default-font: 1rem;
+}
+
+body {
+  color: var(--secondary);
+  font-family: var(--text-font);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--header-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  opacity: var(--mid-fade);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin:0 auto;
+}

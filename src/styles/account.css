@@ -1,0 +1,123 @@
+.account__layout{
+    margin:2em auto !important;
+}
+
+.account__layout--page{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.account__layout--content{
+    max-width:calc(100% - 350px);
+    width:100%;
+}
+
+.account__links{
+    max-width:300px;
+    width:100%;
+    background-color:#f7f7f7;
+    padding:2em;
+    display:flex;
+    flex-direction:column;
+}
+
+.account__link{
+    margin:.5em 0;
+    padding:.5em 0;
+    border-bottom:.5px solid #0000001b;
+    color:#222;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.account__link:last-child{
+    border-bottom: none !important;
+}
+
+.account__link span:nth-child(1){
+    margin-right:.45em;
+}
+
+.account__link span:nth-child(2){
+    font-size:.75em;
+}
+
+.account__link--active{
+    color:rgb(219, 149, 20);
+}
+
+.account__page--context{
+    margin-bottom:3em;
+}
+
+.account__page--context p:nth-child(2){
+    margin:1em 0;
+}
+
+
+.dashboard__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.dashboard__card{
+    width:100%;
+    min-height:8em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    border:.5px solid #0000001b;
+    color:#111;
+    text-transform:uppercase;
+}
+
+.dashboard__card h3{
+    margin-top:.5rem;
+    font-size:.75rem !important;
+}
+
+.account__page p{
+    margin:.5em 0;
+}
+
+@media (max-width: 55em) {
+    .account__layout--page{
+        flex-direction:column;
+    }
+
+    .account__layout--content{
+        min-width:100% !important;
+    }
+
+    .account__layout--page section{
+        margin:0 auto;
+    }
+
+    .account__links{
+        max-width:100%;
+    }
+
+    .account__page{
+        padding-top:1em;
+    }
+    
+}
+
+@media (max-width: 40em) {
+    .dashboard__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 20em) {
+    .dashboard__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

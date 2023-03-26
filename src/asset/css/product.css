@@ -1,0 +1,96 @@
+.myProdNav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.filter-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    background-color: #333;
+    display: flex;  
+    flex-wrap: wrap; 
+    margin: 10px;
+
+  }
+  
+  .filter-dropdown__button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  .filter-dropdown__list {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 30px;
+  }
+
+  .filter-dropdown__list>div{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    height: 30px;
+    margin: 0 20px;
+    align-items: center;
+  }
+  .filter-dropdown__list>div>.select{
+    width: 50%;
+    font-size: 12px;
+    text-align: left;
+  }
+  .filter-dropdown__list>div>.all{
+    width: 20%;
+    font-size: 12px;
+    text-align: right;
+    text-decoration: none;
+
+  }
+  
+  .filter-dropdown__list li .Link {
+    display: block;
+    padding: 20px;
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    background-color: #333;
+    width: 90%;
+    margin: 20px;
+  }
+  
+  .filter-dropdown__list li .Link:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .filter-dropdown:hover> .filter-dropdown__list {
+    display: block;
+  }
+  @media(max-width:900px){
+    .filter-dropdown {
+        width: 100%;
+    }
+   
+  }
+
+  @media(max-width:700px){
+    .filter-dropdown {
+        width: 70%;
+    }
+  }
