@@ -6,6 +6,8 @@ import "../styles/cart.css";
 import PageBanner from "../components/common/PageBanner";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import Socials from "../components/women/Socials";
 
 export default function Cart() {
   const { cart } = useContext(CartContext);
@@ -29,6 +31,8 @@ export default function Cart() {
           <h1>Checkout</h1>
         </section>
       </section>
+      <Socials/>
+      <Footer/>
     </>
   );
 }

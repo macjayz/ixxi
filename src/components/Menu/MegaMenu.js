@@ -31,7 +31,7 @@ const Menu = ({ texts,imagesVertical, imagesHorizontal}) => {
     <ul className="menu">
       {texts.map((item) => (
         <li key={item.id}>
-          <Link to={item.to} className="menulink">
+          <Link to="/" className="menulink">
             <h4 className='menutitle'>
             {item.title}
             </h4>
@@ -54,7 +54,7 @@ const Menu = ({ texts,imagesVertical, imagesHorizontal}) => {
             <div className='line'>
            <hr className='innerline'/>
            </div>
-          <Link to={item.to} className="menulink2">
+          <Link to="/" className="menulink2">
             <img className='menuimage' src={item.src} alt="ixxi"/>
             <h5 className="menutext">{item.text}</h5>
             <div className='line'>
@@ -75,7 +75,7 @@ const Menu = ({ texts,imagesVertical, imagesHorizontal}) => {
            </div>
       {imagesHorizontal.map((item) => (
         <li key={item.id}>
-          <Link to={item.to} className="menulink2">
+          <Link to="/" className="menulink2">
            <div className='datahorizontal'>
            <img className='menuimage' src={item.src} alt="ixxi"/>
           

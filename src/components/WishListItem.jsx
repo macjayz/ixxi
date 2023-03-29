@@ -118,6 +118,7 @@ export default function WishListItem({ item }) {
           <BsTrash size={24} />
         </button>
       </section>
+      
     </section>
   );
 }

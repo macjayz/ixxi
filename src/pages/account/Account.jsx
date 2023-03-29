@@ -3,6 +3,8 @@ import DashboardCard from "../../components/account/DashboardCard";
 import { BsBox2, BsMap, BsSuitHeart, BsPeople } from "react-icons/bs";
 import { TfiWrite, TfiPowerOff } from "react-icons/tfi";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
+import Socials from "../../components/women/Socials";
 
 export default function Account() {
   const username = "somtodev";
@@ -57,6 +59,8 @@ export default function Account() {
           name={"Logout"}
         />
       </section>
+      <Socials/>
+      <Footer/>
     </section>
   );
 }

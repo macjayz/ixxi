@@ -61,10 +61,10 @@ export default function Main() {
             <div className="mycanvas">
               <div className="offcanvas-header">
                 <div className="myAuth">
-                  <Link to="/auth/signIn" className="auth">
+                  <Link to="/signIn" className="auth">
                     Sign In
                   </Link>
-                  <Link to="/auth/signUp" className="auth">
+                  <Link to="/signUp" className="auth">
                     Join Now
                   </Link>
                 </div>
@@ -75,7 +75,7 @@ export default function Main() {
               </div>
               <div className="offcanvas-body">
                 <div className="myAcount">
-                  <Link to="/auth/signIn" className="account">
+                  <Link to="signIn" className="account">
                     <Icon icon="icon-park-solid:order" className="icon" />
                     <h4>My Order</h4>
                   </Link>
@@ -89,11 +89,11 @@ export default function Main() {
                 </div>
 
                 <div className="myAcount">
-                  <Link to="/auth/signIn" className="account">
+                  <Link to="signIn" className="account">
                     <Icon icon="icon-park-solid:order" className="icon" />
                     <h4>Retunds & FAQs</h4>
                   </Link>
-                  <Link to="/auth/signUp" className="account">
+                  <Link to="signUp" className="account">
                     <Icon
                       icon="material-symbols:account-circle-off-rounded"
                       className="icon"
@@ -106,10 +106,10 @@ export default function Main() {
           </div>
           {/* end of modal */}
 
-          <Link to="/" className="wishlist">
+          <Link to="/wishlist" className="wishlist1">
             <Icon className="usericon" icon="ri:heart-add-fill" />
           </Link>
-          <Link to="" className="cart">
+          <Link to="/cart" className="cart1">
             <Icon className="usericon" icon="ph:bag-fill" />
           </Link>
         </div>
@@ -124,16 +124,16 @@ export default function Main() {
             aria-controls="sidebar">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="mainlogo">i X X i</div>
+          <Link to='/' className="mainlogo">i X X i</Link>
           <div
             className="offcanvas offcanvas-end"
             tabIndex="-1"
             id="sidebar"
             aria-labelledby="sidebarLabel">
             <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="sidebarLabel">
+              <Link to={"/"} className="offcanvas-title minilogo" id="sidebarLabel">
                 i X X i Menu
-              </h5>
+              </Link>
               <button
                 type="button"
                 className="btn-close text-reset"
@@ -170,10 +170,10 @@ export default function Main() {
                       <div className="mycanvas">
                         <div className="offcanvas-header">
                           <div className="myAuth">
-                            <Link to="/auth/signIn" className="auth">
+                            <Link to="signIn" className="auth">
                               Sign In
                             </Link>
-                            <Link to="/auth/signUp" className="auth">
+                            <Link to="signUp" className="auth">
                               Join Now
                             </Link>
                           </div>
@@ -184,7 +184,7 @@ export default function Main() {
                         </div>
                         <div className="offcanvas-body">
                           <div className="myAcount">
-                            <Link to="/auth/signIn" className="account">
+                            <Link to="signIn" className="account">
                               <Icon
                                 icon="icon-park-solid:order"
                                 className="icon"
@@ -201,14 +201,14 @@ export default function Main() {
                           </div>
 
                           <div className="myAcount">
-                            <Link to="/auth/signIn" className="account">
+                            <Link to="signIn" className="account">
                               <Icon
                                 icon="icon-park-solid:order"
                                 className="icon"
                               />
                               <h4>Retunds & FAQs</h4>
                             </Link>
-                            <Link to="/auth/signUp" className="account">
+                            <Link to="signUp" className="account">
                               <Icon
                                 icon="material-symbols:account-circle-off-rounded"
                                 className="icon"
@@ -220,10 +220,10 @@ export default function Main() {
                       </div>
                     </div>
                     {/* end of modal */}
-                    <Link to="/" className="wishlist">
+                    <Link to="/wishlist" className="wishlist1">
                       <Icon className="usericon" icon="ri:heart-add-fill" />
                     </Link>
-                    <Link to="" className="cart">
+                    <Link to="/cart" className="cart1">
                       <Icon className="usericon" icon="ph:bag-fill" />
                     </Link>
                   </div>

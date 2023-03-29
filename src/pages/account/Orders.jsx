@@ -1,4 +1,6 @@
+import Footer from "../../components/Footer";
 import OrderList from "../../components/account/OrderList";
+import Socials from "../../components/women/Socials";
 import "../../styles/orders.css";
 
 export default function Orders() {
@@ -37,6 +39,8 @@ export default function Orders() {
         {/* <OrderList  />  */}
         <OrderList orders={orders} />
       </section>
+      <Socials/>
+      <Footer/>
     </section>
   );
 }

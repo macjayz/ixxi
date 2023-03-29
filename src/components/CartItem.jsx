@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { BsTrash } from "react-icons/bs";
+// import { BsTrash } from "react-icons/bs";
 
 import { CartContext } from "../contexts/CartContext";
 

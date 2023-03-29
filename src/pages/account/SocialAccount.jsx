@@ -1,3 +1,5 @@
+import Footer from "../../components/Footer";
+import Socials from "../../components/women/Socials";
 import "../../styles/social.css";
 export default function SocialAccount() {
   return (
@@ -34,6 +36,8 @@ export default function SocialAccount() {
           </section>
         </section>
       </section>
+      <Socials/>
+      <Footer/>
     </section>
   );
 }

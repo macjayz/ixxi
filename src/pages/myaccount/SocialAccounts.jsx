@@ -5,6 +5,7 @@ import { BiIdCard } from "react-icons/bi";
 import AccountInfoBar from "../../components/myaccount/AccountInfoBar";
 import AccountPageBar from "../../components/myaccount/AccountPageBar";
 import Navigation from "../../components/myaccount/Navigation";
+import Footer from "../../components/Footer";
 
 export default function SocialAccounts() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function SocialAccounts() {
           </section>
         </section>
       </section>
+      <Footer/>
     </>
   );
 }

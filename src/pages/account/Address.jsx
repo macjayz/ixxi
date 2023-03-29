@@ -1,4 +1,6 @@
+import Footer from "../../components/Footer";
 import AddressCard from "../../components/account/AddressCard";
+import Socials from "../../components/women/Socials";
 
 export default function Address() {
   return (
@@ -8,6 +10,8 @@ export default function Address() {
       </p>
       <AddressCard type={"Billing"} />
       <AddressCard type={"Shipping"} />
+      <Socials/>
+      <Footer/>
     </section>
   );
 }

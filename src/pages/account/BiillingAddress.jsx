@@ -1,5 +1,8 @@
-import {  City } from "country-state-city";
+import { Country, City, State } from "country-state-city";
+import Select from "react-select";
 import "../../styles/address.css";
+import Socials from "../../components/women/Socials";
+import Footer from "../../components/Footer";
 
 export default function BiillingAddress() {
   console.log(City);
@@ -94,6 +97,8 @@ export default function BiillingAddress() {
 
         <button type="submit">SAVE ADDRESS</button>
       </form>
+      <Socials/>
+      <Footer/>
     </section>
   );
 

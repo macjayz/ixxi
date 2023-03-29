@@ -1,4 +1,8 @@
+import { Country, City, State } from "country-state-city";
+import Select from "react-select";
 import "../../styles/address.css";
+import Socials from "../../components/women/Socials";
+import Footer from "../../components/Footer";
 
 export default function ShippingAddress() {
   return (
@@ -91,6 +95,8 @@ export default function ShippingAddress() {
 
         <button type="submit">SAVE ADDRESS</button>
       </form>
+      <Socials/>
+      <Footer/>
     </section>
   );
 

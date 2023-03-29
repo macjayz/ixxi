@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom";
+import Socials from "../../components/women/Socials";
+import Footer from "../../components/Footer";
 
 export default function OrderItem() {
   const { id } = useParams();
@@ -71,6 +73,8 @@ export default function OrderItem() {
           </section>
         </section>
       </section>
+      <Socials/>
+      <Footer/>
     </section>
   );
 }

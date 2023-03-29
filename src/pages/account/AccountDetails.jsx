@@ -1,3 +1,6 @@
+import Footer from "../../components/Footer";
+import Socials from "../../components/women/Socials";
+
 export default function AccountDetails() {
   return (
     <section className="account__page address">
@@ -60,6 +63,8 @@ export default function AccountDetails() {
         </button>
         
       </form>
+      <Socials/>
+      <Footer/>
     </section>
   );
 

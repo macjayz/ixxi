@@ -10,16 +10,23 @@ import FitnessScreen from "./components/fitness/FitnessScreen";
 
 import Home from "./components/Menu/ThirdMenu/Home";
 import ToggleNav from "./components/ToggleNav";
-import SignIn from './pages/auth/SignIn'
-import SignUp from './pages/auth/SignUp'
-import Account from './pages/myaccount/Account'
-import AccountOrders from './pages/myaccount/AccountOrders'
-import MyDetails from './pages/myaccount/MyDetails'
-import Address from './pages/myaccount/Address'
-import Payment from './pages/myaccount/Payment'
-import SocialAccount from './pages/myaccount/SocialAccounts'
-import ContactPreferences from './pages/myaccount/ContactPreferences'
+import SignIn from "./pages/auth/SignIn";
+import SignUp from "./pages/auth/SignUp";
+import Account from "./pages/account/Account";
+import Address from "./pages/account/Address";
+import SocialAccount from "./pages/account/SocialAccount";
 import Reuseable from "./components/Product/Reuseable";
+import WishList from "./pages/WishList";
+import Cart from "./pages/Cart";
+
+import AccountLayout from './layouts/AccountLayout'
+import BiillingAddress from './pages/account/BiillingAddress'
+import ShippingAddress from './pages/account/ShippingAddress'
+import AccountDetails from './pages/account/AccountDetails'
+import Orders from './pages/account/Orders'
+import GiftVouchers from './pages/account/GiftVouchers'
+import OrderItem from './pages/account/OrderItem'
+
 
 function App() {
   return (
@@ -28,10 +35,9 @@ function App() {
         <ToggleNav />
         <Switch>
           {/* Auth */}
-          <Route path="/auth/signIn" component={SignIn} />
-          <Route path="/auth/signUp" component={SignUp} />
+          <Route path="/signIn" component={SignIn} />
+          <Route path="/signUp" component={SignUp} />
 
-          <Route path={"/my-account"} component={Account}></Route>
 
           <Route path="/" exact component={Home}></Route>
           <Route path="/brand" exact component={Brands}></Route>
@@ -43,19 +49,28 @@ function App() {
           <Route path="/fitness" exact component={FitnessScreen}></Route>
           <Route path="/reuse" exact component={Reuseable}></Route>
 
-
-		    {/* Account Routes */}
-			<Route path={'/my-account/orders'} component={AccountOrders} />
-        <Route path={'/my-account/my-details'} component={MyDetails} />
-        <Route path={'/my-account/addresses'} component={Address} />
-        <Route path={'/my-account/payment-methods'} component={Payment} />
-        <Route path={'/my-account/contact-preferences'} component={ContactPreferences} />
-        <Route path={'/my-account/social-accounts'} component={SocialAccount} />
-        
-
-        <Route exact path='*'>
-          Page Not Found
+          {/* Account Routes */}
+          <Route path={'/my-account'}>
+          <AccountLayout>
+          <Route exact path={'/my-account'} component={Account} />
+            <Route exact path={'/my-account/addresses'} >
+                <Address />
+            </Route>
+            <Route exact path={'/my-account/addresses/edit-address/billing'} component={BiillingAddress} />
+            <Route exact path={'/my-account/addresses/edit-address/shipping'} component={ShippingAddress} />
+            <Route path={'/my-account/my-details'} component={AccountDetails} />
+            <Route exact path={'/my-account/orders'} component={Orders} />
+            <Route path={'/my-account/orders/:id'} component={OrderItem} />
+            <Route exact path={'/my-account/social-accounts'} component={SocialAccount} />
+            <Route exact path={'/my-account/gift-cards-and-vouchers'} component={GiftVouchers} />
+          </AccountLayout>
         </Route>
+            <Route exact path='/wishlist' component={WishList} />
+            <Route exact path='/cart' component={Cart} />
+
+          <Route exact path="*">
+            Page Not Found
+          </Route>
         </Switch>
       </Router>
     </div>
